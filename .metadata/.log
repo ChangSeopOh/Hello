@@ -1,0 +1,1077 @@
+!SESSION 2016-01-09 09:14:36.960 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-09 09:15:39.228
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2016-01-09 09:38:19.696
+!MESSAGE Error creating JDBC Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 14 more
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2016-01-09 09:38:19.708
+!MESSAGE Error creating SQL Model Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 20 more
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2016-01-09 09:38:19.779
+!MESSAGE Could not connect to Oracle11g.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2016-01-09 09:38:19.779
+!MESSAGE Error creating SQL Model Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 20 more
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2016-01-09 09:38:19.779
+!MESSAGE Error creating JDBC Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 14 more
+!SESSION 2016-01-10 16:35:42.659 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-01-10 16:36:10.312
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-10 16:36:32.375
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-10 16:38:15.710 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/D:/Utility/worksplace/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-10 16:38:32.707
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-10 16:39:34.311 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/D:/Utility/worksplace/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2016-01-10 16:39:49.696
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-10 16:39:50.153
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2016-01-10 16:42:27.349
+!MESSAGE Error creating SQL Model Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 20 more
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2016-01-10 16:42:27.362
+!MESSAGE Error creating JDBC Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 14 more
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2016-01-10 16:42:27.367
+!MESSAGE Could not connect to Oracle11g.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2016-01-10 16:42:27.367
+!MESSAGE Error creating SQL Model Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 20 more
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2016-01-10 16:42:27.367
+!MESSAGE Error creating JDBC Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 14 more
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2016-01-10 16:42:33.801
+!MESSAGE Error creating SQL Model Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 20 more
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2016-01-10 16:42:33.815
+!MESSAGE Error creating JDBC Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 14 more
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2016-01-10 16:42:33.881
+!MESSAGE Could not connect to Oracle11g.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2016-01-10 16:42:33.881
+!MESSAGE Error creating SQL Model Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 20 more
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2016-01-10 16:42:33.882
+!MESSAGE Error creating JDBC Connection connection to Oracle11g. (Error: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ )
+!STACK 0
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:328)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.internalCreateConnection(DriverConnectionBase.java:105)
+	at org.eclipse.datatools.connectivity.DriverConnectionBase.open(DriverConnectionBase.java:54)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:96)
+	at org.eclipse.datatools.enablement.internal.oracle.JDBCOracleConnectionFactory.createConnection(JDBCOracleConnectionFactory.java:27)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:386)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+	... 14 more
+!SESSION 2016-01-10 16:45:02.755 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-10 16:45:15.191
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2016-01-10 16:45:15.833
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2016-01-10 16:46:35.603 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-10 16:46:47.217
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2016-01-10 16:46:47.806
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2016-01-23 11:23:37.547 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2016-01-23 11:24:27.614
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-23 11:24:27.658
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 3 2016-01-23 12:05:02.933
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_66\lib\rt.jar
+  [+] D:\Utility\프로그램\MyLibrary\MyCalendar.jar
+  [+] D:\Utility\프로그램\MyLibrary\commons-codec-1.10.jar
+  [+] D:\Utility\프로그램\MyLibrary\log4j-1.2.17.jar
+  [+] D:\Utility\프로그램\MyLibrary\log4jdbc4-1.2.jar
+  [+] D:\Utility\프로그램\MyLibrary\ojdbc6.jar
+  [+] D:\Utility\프로그램\MyLibrary\slf4j-api-1.7.13.jar
+  [+] D:\Utility\프로그램\MyLibrary\slf4j-log4j12-1.7.13.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:170)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:126)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2016-01-23 14:35:50.673
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Core Exception [code 275] A resource exists with a different case: '/src/src/baekjoon/Main.java'.
+	at org.eclipse.jdt.internal.core.MultiOperation.processElements(MultiOperation.java:176)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processElements(CopyResourceElementsOperation.java:429)
+	at org.eclipse.jdt.internal.core.MultiOperation.executeOperation(MultiOperation.java:91)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:794)
+	at org.eclipse.jdt.internal.core.JavaModel.rename(JavaModel.java:265)
+	at org.eclipse.jdt.internal.core.CompilationUnit.rename(CompilationUnit.java:1270)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.RenameCompilationUnitChange.doRename(RenameCompilationUnitChange.java:62)
+	at org.eclipse.jdt.internal.corext.refactoring.AbstractJavaElementRenameChange.perform(AbstractJavaElementRenameChange.java:89)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5409)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/src/src/baekjoon/Main.java'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:322)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:300)
+	at org.eclipse.core.internal.resources.Resource.checkMoveRequirements(Resource.java:389)
+	at org.eclipse.core.internal.resources.Resource.assertMoveRequirements(Resource.java:199)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1518)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processCompilationUnitResource(CopyResourceElementsOperation.java:341)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processElement(CopyResourceElementsOperation.java:411)
+	at org.eclipse.jdt.internal.core.MultiOperation.processElements(MultiOperation.java:164)
+	... 26 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/src/src/baekjoon/Main.java'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:322)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:300)
+	at org.eclipse.core.internal.resources.Resource.checkMoveRequirements(Resource.java:389)
+	at org.eclipse.core.internal.resources.Resource.assertMoveRequirements(Resource.java:199)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1518)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processCompilationUnitResource(CopyResourceElementsOperation.java:341)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processElement(CopyResourceElementsOperation.java:411)
+	at org.eclipse.jdt.internal.core.MultiOperation.processElements(MultiOperation.java:164)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processElements(CopyResourceElementsOperation.java:429)
+	at org.eclipse.jdt.internal.core.MultiOperation.executeOperation(MultiOperation.java:91)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:794)
+	at org.eclipse.jdt.internal.core.JavaModel.rename(JavaModel.java:265)
+	at org.eclipse.jdt.internal.core.CompilationUnit.rename(CompilationUnit.java:1270)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.RenameCompilationUnitChange.doRename(RenameCompilationUnitChange.java:62)
+	at org.eclipse.jdt.internal.corext.refactoring.AbstractJavaElementRenameChange.perform(AbstractJavaElementRenameChange.java:89)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5409)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.jdt.core 4 966 2016-01-23 14:35:50.675
+!MESSAGE A resource exists with a different case: '/src/src/baekjoon/Main.java'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/src/src/baekjoon/Main.java'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:322)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:300)
+	at org.eclipse.core.internal.resources.Resource.checkMoveRequirements(Resource.java:389)
+	at org.eclipse.core.internal.resources.Resource.assertMoveRequirements(Resource.java:199)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1518)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processCompilationUnitResource(CopyResourceElementsOperation.java:341)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processElement(CopyResourceElementsOperation.java:411)
+	at org.eclipse.jdt.internal.core.MultiOperation.processElements(MultiOperation.java:164)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processElements(CopyResourceElementsOperation.java:429)
+	at org.eclipse.jdt.internal.core.MultiOperation.executeOperation(MultiOperation.java:91)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:794)
+	at org.eclipse.jdt.internal.core.JavaModel.rename(JavaModel.java:265)
+	at org.eclipse.jdt.internal.core.CompilationUnit.rename(CompilationUnit.java:1270)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.RenameCompilationUnitChange.doRename(RenameCompilationUnitChange.java:62)
+	at org.eclipse.jdt.internal.corext.refactoring.AbstractJavaElementRenameChange.perform(AbstractJavaElementRenameChange.java:89)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5409)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 2 org.eclipse.core.resources 4 275 2016-01-23 14:35:50.675
+!MESSAGE A resource exists with a different case: '/src/src/baekjoon/Main.java'.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-01-23 14:59:05.589
+!MESSAGE Connection to http://propedit.soucefore.jp/eclipse/updates/p2.index failed on propedit.soucefore.jp. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: propedit.soucefore.jp
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-01-23 14:59:05.926
+!MESSAGE Connection to http://propedit.soucefore.jp/eclipse/updates/p2.index failed on propedit.soucefore.jp. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: propedit.soucefore.jp
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-01-23 14:59:22.662
+!MESSAGE Connection to http://propedit.sourcefore.jp/eclipse/updates/p2.index failed on propedit.sourcefore.jp. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: propedit.sourcefore.jp
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-01-23 14:59:22.988
+!MESSAGE Connection to http://propedit.sourcefore.jp/eclipse/updates/p2.index failed on propedit.sourcefore.jp. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: propedit.sourcefore.jp
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-01-23 15:03:54.737 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/D:/Utility/worksplace/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2016-01-23 15:04:11.734
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-23 15:04:11.972
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:04:12.024
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:04:12.027
+!MESSAGE properties loading for project 'src'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:04:12.029
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:04:12.030
+!MESSAGE loading file 'menu.properties'
+
+!ENTRY com.objectaid.uml @ com.objectaid.uml.util.extend.ExecutableExtensionManager.get(107) 4 0 2016-01-23 15:04:13.359
+!MESSAGE duplicate id 'PNG' for com.objectaid.uml.renderFormats
+!STACK 0
+com.objectaid.uml.UMLException: duplicate id 'PNG' for com.objectaid.uml.renderFormats
+	at com.objectaid.uml.util.extend.ExecutableExtensionManager.get(ExecutableExtensionManager.java:107)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.getAutomaticImage(PersistedDiagram.java:186)
+	at com.objectaid.uml.model.definition.DiagramDefinition.updateModel(DiagramDefinition.java:43)
+	at com.objectaid.uml.cls.model.definition.ClassDiagramDefinition.updateModel(ClassDiagramDefinition.java:42)
+	at com.objectaid.uml.cls.model.definition.ClassDiagramDefinition.updateModel(ClassDiagramDefinition.java:22)
+	at com.objectaid.uml.model.definition.ModelDefinition.create(ModelDefinition.java:185)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:77)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:40)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:242)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:211)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:160)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.objectaid.uml @ com.objectaid.uml.util.extend.ExecutableExtensionManager.get(107) 4 0 2016-01-23 15:04:13.360
+!MESSAGE duplicate id 'PNG' for com.objectaid.uml.renderFormats
+!STACK 0
+com.objectaid.uml.UMLException: duplicate id 'PNG' for com.objectaid.uml.renderFormats
+	at com.objectaid.uml.util.extend.ExecutableExtensionManager.get(ExecutableExtensionManager.java:107)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.getAutomaticImage(PersistedDiagram.java:186)
+	at com.objectaid.uml.model.definition.DiagramDefinition.updateModel(DiagramDefinition.java:43)
+	at com.objectaid.uml.cls.model.definition.ClassDiagramDefinition.updateModel(ClassDiagramDefinition.java:42)
+	at com.objectaid.uml.cls.model.definition.ClassDiagramDefinition.updateModel(ClassDiagramDefinition.java:22)
+	at com.objectaid.uml.model.definition.ModelDefinition.create(ModelDefinition.java:185)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:77)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:40)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:242)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:211)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:160)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.objectaid.uml @ com.objectaid.uml.util.extend.ExecutableExtensionManager.get(107) 4 0 2016-01-23 15:04:13.360
+!MESSAGE duplicate id 'PNG' for com.objectaid.uml.renderFormats
+!STACK 0
+com.objectaid.uml.UMLException: duplicate id 'PNG' for com.objectaid.uml.renderFormats
+	at com.objectaid.uml.util.extend.ExecutableExtensionManager.get(ExecutableExtensionManager.java:107)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.getAutomaticImage(PersistedDiagram.java:186)
+	at com.objectaid.uml.model.definition.DiagramDefinition.updateModel(DiagramDefinition.java:43)
+	at com.objectaid.uml.cls.model.definition.ClassDiagramDefinition.updateModel(ClassDiagramDefinition.java:42)
+	at com.objectaid.uml.cls.model.definition.ClassDiagramDefinition.updateModel(ClassDiagramDefinition.java:22)
+	at com.objectaid.uml.model.definition.ModelDefinition.create(ModelDefinition.java:185)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:77)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:40)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:242)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:211)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:160)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:06:45.216
+!MESSAGE properties loading for project 'src'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:06:45.217
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:06:45.217
+!MESSAGE loading file 'menu.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:07:31.637
+!MESSAGE properties loading for project 'src'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:07:31.637
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 15:07:31.638
+!MESSAGE loading file 'menu.properties'
+!SESSION 2016-01-23 16:20:38.803 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-23 16:20:59.487
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2016-01-23 16:21:00.133
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 16:21:00.324
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 16:21:00.326
+!MESSAGE properties loading for project 'src'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 16:21:00.327
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-23 16:21:00.328
+!MESSAGE loading file 'menu.properties'
+!SESSION 2016-01-24 13:34:21.524 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-24 13:34:54.531
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2016-01-24 13:34:56.778
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-24 13:34:57.355
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-24 13:34:57.395
+!MESSAGE properties loading for project 'src'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-24 13:34:57.396
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-24 13:34:57.456
+!MESSAGE loading file 'menu.properties'
+!SESSION 2016-01-30 11:59:08.108 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-30 11:59:37.036
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2016-01-30 11:59:37.353
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-30 11:59:38.339
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-30 11:59:38.341
+!MESSAGE properties loading for project 'src'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-30 11:59:38.343
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-30 11:59:38.452
+!MESSAGE loading file 'menu.properties'
+
+!ENTRY com.objectaid.uml @ com.objectaid.uml.util.extend.ExecutableExtensionManager.get(107) 4 0 2016-01-30 11:59:40.105
+!MESSAGE duplicate id 'JPEG' for com.objectaid.uml.renderFormats
+!STACK 0
+com.objectaid.uml.UMLException: duplicate id 'JPEG' for com.objectaid.uml.renderFormats
+	at com.objectaid.uml.util.extend.ExecutableExtensionManager.get(ExecutableExtensionManager.java:107)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.getAutomaticImage(PersistedDiagram.java:186)
+	at com.objectaid.uml.model.definition.DiagramDefinition.updateModel(DiagramDefinition.java:43)
+	at com.objectaid.uml.cls.model.definition.ClassDiagramDefinition.updateModel(ClassDiagramDefinition.java:42)
+	at com.objectaid.uml.cls.model.definition.ClassDiagramDefinition.updateModel(ClassDiagramDefinition.java:22)
+	at com.objectaid.uml.model.definition.ModelDefinition.create(ModelDefinition.java:185)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:77)
+	at com.objectaid.uml.model.persistence.UnmarshalDiagramVisitor.doVisit(UnmarshalDiagramVisitor.java:26)
+	at com.objectaid.uml.util.collection.GenericVisitor.visit(GenericVisitor.java:40)
+	at com.objectaid.uml.model.persistence.PersistedDiagram.accept(PersistedDiagram.java:40)
+	at com.objectaid.uml.model.diagram.DiagramFactory.unmarshal(DiagramFactory.java:242)
+	at com.objectaid.uml.model.DiagramHandle.unmarshalModel(DiagramHandle.java:211)
+	at com.objectaid.uml.model.DiagramHandle.unmarshal(DiagramHandle.java:160)
+	at com.objectaid.uml.model.manage.DiagramManager.add(DiagramManager.java:104)
+	at com.objectaid.uml.model.manage.StartupJob$2.run(StartupJob.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+!SESSION 2016-01-31 11:20:26.447 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-31 11:20:43.666
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2016-01-31 11:20:44.493
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-31 11:20:44.777
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-31 11:20:44.779
+!MESSAGE properties loading for project 'src'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-31 11:20:44.780
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-01-31 11:20:44.794
+!MESSAGE loading file 'menu.properties'
+!SESSION 2016-03-13 10:28:26.092 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-03-13 10:29:00.314
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2016-03-13 10:29:00.526
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-03-13 10:29:01.635
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-03-13 10:29:01.637
+!MESSAGE properties loading for project 'src'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-03-13 10:29:01.638
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2016-03-13 10:29:01.710
+!MESSAGE loading file 'menu.properties'
